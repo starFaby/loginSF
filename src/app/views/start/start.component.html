@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-md-5 mx-auto">
+        <form [formGroup]="formGirl" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Title</label>
+              <input type="text" class="form-control" formControlName="title"  placeholder="nombre" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Url</label>
+                <input type="text" class="form-control" formControlName="url"  placeholder="nombre" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Descripcion</label>
+                <input type="text" class="form-control" formControlName="description"  placeholder="nombre" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Estado</label>
+                <input type="text" class="form-control" formControlName="user_id"  placeholder="nombre" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary form-control" [disabled]="formGirl.invalid">Submit</button>
+          </form>
+    </div>
+</div>
+
